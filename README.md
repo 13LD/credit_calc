@@ -1,4 +1,6 @@
 # CreditCalc
+
+[![Build Status](https://travis-ci.org/13LD/event_api.svg?branch=master)](https://travis-ci.org/13LD/event_api)
 ##### Simple credit calculator
 
 # Usage

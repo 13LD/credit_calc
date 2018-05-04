@@ -1,0 +1,48 @@
+<form method="post" action="/calculate" class="ui centered form">
+  <img src="http://www.aval.ua/f/1/logo-error.gif" alt="aval-logo">
+  <div class="field">
+    <h4 class="ui dividing header">Кредитный онлайн-калькулятор</h4>
+    <p>Предлагаем вам рассчитать ориентировочную сумму ежемесячных платежей по возврату основной суммы и
+      процентов за пользование кредитом в зависимости от срока кредитования и размера процентной ставки,
+      а также определить наиболее удобную для вас схему кредитования.
+    </p>
+    <p>
+      Более подробную информацию можно получить при личной встрече с кредитным экспертом.
+    </p>
+  </div>
+  <h4 class="ui dividing header">Кредитные сведения:</h4>
+  <div class="two fields">
+    <div class="field">
+      <label>Процентная ставка (%):</label>
+      <input id="percent" type="number" name="percent" value="" min="1">
+      <div class="ui pointing red basic label">
+        Внимание: Данные вводятся через точку!
+      </div>
+    </div>
+    <div class="field">
+      <label>Сумма кредита:</label>
+      <input id="credit" type="number" name="credit" value="" min="1"><br>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Метод погашения кредита:</label>
+      <div class="ui radio checkbox">
+        <input type="radio" name="payOff" id="payoutUsual" value="Usual" checked="">
+        <label>Стандартный</label>
+      </div>
+      <div class="ui radio checkbox">
+        <input type="radio" name="payOff" id="payOffEqual" value="Equal">
+        <label>Аннуитентный (равными частями)</label>
+      </div>
+    </div>
+    <div class="field">
+      <label>Срок кредита (в месяцах):</label>
+      <input id="term" type="number" name="term" value="" min="1"> <br>
+    </div>
+  </div>
+  <div class="field">
+    <label>График платежей:</label>
+    <input type="submit" value="Построить" class="ui positive basic button">
+  </div>
+</form>

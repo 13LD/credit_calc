@@ -1,11 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "credit_calc/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "credit_calc"
-  spec.version       = CreditCalc::VERSION
+  spec.version       = "1.0"
   spec.authors       = ["Dmytro Lysohor"]
   spec.email         = ["tompla96@ukr.net"]
 

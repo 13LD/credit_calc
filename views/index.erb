@@ -1,4 +1,4 @@
-<form method="post" action="/calculate" class="ui centered form">
+<form method="post" action="/calc" class="ui centered form">
   <img src="http://www.aval.ua/f/1/logo-error.gif" alt="aval-logo">
   <div class="field">
     <h4 class="ui dividing header">Кредитный онлайн-калькулятор</h4>
@@ -28,11 +28,11 @@
     <div class="field">
       <label>Метод погашения кредита:</label>
       <div class="ui radio checkbox">
-        <input type="radio" name="payOff" id="payoutUsual" value="Usual" checked="">
+        <input type="radio" name="payout" id="payoutStandart" value="standart" checked="">
         <label>Стандартный</label>
       </div>
       <div class="ui radio checkbox">
-        <input type="radio" name="payOff" id="payOffEqual" value="Equal">
+        <input type="radio" name="payout" id="payoutAnnuity" value="annuity">
         <label>Аннуитентный (равными частями)</label>
       </div>
     </div>
